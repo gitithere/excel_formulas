@@ -1,0 +1,5 @@
+Formula for vlookup and match on a different columns
+    =IFERROR(VLOOKUP(D2,ADReview!$B$2:$B$634,1,FALSE),"***NO MATCH***")
+*
+Formula to count number of rows within cells including rows within the cell (ie ALT+ENTER)
+    =IF(D3<>"", LEN(D3)-LEN(SUBSTITUTE(D3,CHAR(10),""))+1,"")
